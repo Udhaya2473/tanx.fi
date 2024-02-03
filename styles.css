@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: skyblue;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 24px;
+}
+
+
+.blue-border {
+    border-top: 3px solid blue;
+    padding-top: 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+
+button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.login-box p {
+    margin-top: 15px;
+    color: white;
+}
+
+.login-box a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+
+.product-card a:hover {
+    background-color: #003366;
+}
+
+
+.cart-container {
+    text-align: center;
+}
+
+.cart-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cart-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-details-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    
+}
+
+.price-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-order-container button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.place-order-container button:hover {
+    background-color: #003366;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.confirmation-container img {
+    margin-top: 20px;
+    width: 50px;
+}
+
+.confirmation-container button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirmation-container button:hover {
+    background-color: #003366;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #004080;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+nav ul li {
+    margin-left: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.product-details h3 {
+    margin-top: 0;
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+.product-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.product-view-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.product-view-image,
+.product-view-details {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.product-view-details {
+    margin-top: 20px; 
+}
+
+.product-view-details a {
+    margin-top: 15px; 
+}
+
+
+@media (min-width: 768px) {
+    .product-view-container {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .product-view-details {
+        max-width: 50%; 
+        margin-left: 20px;
+        margin-top: 0; 
+    }
+}
+
+
+.create-account-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#createAccountForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#createAccountForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#createAccountForm input,
+#createAccountForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#createAccountForm button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#createAccountForm button:hover {
+    background-color: #003366;
+}
+
+#accountCreatedPopup {
+    display: none;
+}
+
+#accountCreatedPopup .popup-content {
+    text-align: center;
+}
+
+#accountCreatedPopup button {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#accountCreatedPopup button:hover {
+    background-color: red;
+}
+

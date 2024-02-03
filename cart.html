@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cart - ShopKart</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span class="blue-border">ShopKart</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="cart-container">
+        <h2>Your Cart</h2>
+        <div class="cart-list">
+            <!-- Add your cart items here -->
+            <div class="cart-item">
+                <h3>Tshirt</h3>
+                <p>Price: 300</p>
+                <div class="quantity-container">
+                    <button>-</button>
+                    <span>2</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <!-- Add more cart items as needed -->
+        </div>
+        <div class="price-details-container">
+            <h3>Price Details</h3>
+            <div class="price-details">
+                <p>Total Price: 600</p>
+                <p>Discount: 100</p>
+                <p>Delivery Charge: 50</p>
+                <hr>
+                <p>Total: 550</p>
+            </div>
+        </div>
+        <div class="place-order-container">
+            <button onclick="showConfirmation()">Place Order</button>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="confirmation-container">
+                <h2>Your Order Placed Successfully</h2>
+                <p>It will be delivered in 5 days.</p>
+                <button onclick="closeConfirmation()">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
